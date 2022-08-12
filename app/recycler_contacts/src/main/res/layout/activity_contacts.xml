@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ContactsActivity">
+
+    <TextView
+        android:id="@+id/contact_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contacts page"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/search_view"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:hint="all contacts"
+        android:id="@+id/text_view_count"/>
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_v"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_ripple"
+        tools:listitem="@layout/custom_contacts1"
+        android:dividerHeight="5dp" />
+
+</LinearLayout>

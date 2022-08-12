@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Content_Providers"
+include ':app'
+include ':app:recycler_contacts'
+include ':app:call_log_appilication'
+include ':call_log_change_duration'
+include ':reacycler_contact_search'
